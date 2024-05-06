@@ -1,0 +1,50 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem
+    ;
+}
+
+.container {
+    width: 90vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    padding-left: 5%;
+    background-color: #1c1c1c;
+    border-radius: 10px;
+    gap: 10px;
+
+    
+}
+.container h3 {
+    color: white;
+    font-weight: bolder;
+    font-size: 1.75rem;
+
+}
+.container p {
+    color: #b2b2b2;
+}
+.container span {
+    color: #febe01;
+}
+
+.container a {
+    padding: 1rem 2rem;
+    background-color: #febe01;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+
+}
