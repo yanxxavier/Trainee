@@ -1,0 +1,143 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial;
+    background-color: #f7f7f7;
+    overflow-x: hidden;
+}
+
+nav {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center; 
+   
+}
+nav img {
+    margin: 5rem 0;
+}
+.nav-links {
+    list-style-type: none;
+    display: flex;
+    gap: 2rem;
+}
+
+.nav-links li {
+    padding: 1rem 2.5rem;
+    background-color: white;
+    text-transform: uppercase;
+    
+}
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 5rem;
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1000px;
+    position: relative;
+       
+} 
+.container1 {
+   text-align: end;
+   padding-top: 2.5rem;
+   padding-right: 2.5rem;
+   background-color: white;
+   
+   
+    
+}
+.container1 h1 {
+    font-size: 2rem;
+}
+.container1 p {
+    font-size: 1.2rem;
+    font-weight: 400;
+    line-height: 22px;
+    margin-bottom: 50px;
+}
+.container1 a {
+    padding: 1rem 2.3rem;
+    text-decoration: none;
+    color: white;
+    text-transform: uppercase;
+    font-weight: bold;
+    background-color: #ee2211;
+    border-radius: 5px;  
+}
+
+.bike-backGround {
+    width: 100%;
+    
+}
+.line {
+    width: 4rem;
+    height: 5px;
+    background-color: #ee2211;
+    position: absolute;
+    left: 47%;
+    top: 5%;
+}
+
+.container3 {
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    padding-right: 2rem;
+    text-align: end;
+}
+
+.container3 span {
+    font-size: 4rem;
+    font-weight: bolder;
+    text-transform: uppercase;
+    color: #c6c6c6;
+    
+}
+.container4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: white;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    
+}
+.vantagem {
+    display: grid;
+    grid-template-columns: 40px 300px;
+
+}
+.vantagem img {
+    margin-top: 26px;
+}
+.vantagem h4 {
+    font-size: 1.3rem;
+    font-weight: bolder;
+}
+.info {
+   text-align:start;
+   font-size: 1.2rem;
+   
+}
+
+footer {
+    
+    width: 100vw;
+    height: 15vh;
+    background-color: #c6c6c6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+footer p {
+    font-size: 1.3rem;
+    color: black;
+}
