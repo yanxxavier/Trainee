@@ -17,6 +17,19 @@ nav {
 nav img {
     margin: 5rem 0;
 }
+.menu-hamburger {
+    
+    width: 38px;
+    height: 32px;
+    display: none;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.menu-hamburger span {
+    width: 100%;
+    height: 3px;
+    background: black;
+}
 .nav-links {
     list-style-type: none;
     display: flex;
@@ -27,7 +40,11 @@ nav img {
     padding: 1rem 2.5rem;
     background-color: white;
     text-transform: uppercase;
+    border-radius: 5px;
     
+}
+.nav-links li:hover {
+    border: 2px solid #ee2211;
 }
 main {
     display: flex;
@@ -53,6 +70,17 @@ section {
    
     
 }
+.container1::after {
+    content: "";
+    display: block;
+    background: #ee2211;
+    width: 5rem;
+    height: 5px;
+    position: absolute;
+    top: 5%;
+    left: 46%;
+   
+}
 .container1 h1 {
     font-size: 2rem;
 }
@@ -71,19 +99,16 @@ section {
     background-color: #ee2211;
     border-radius: 5px;  
 }
+.container1 a:hover {
+   background-color: #900; 
+}
 
 .bike-backGround {
     width: 100%;
+    height: 100%;
     
 }
-.line {
-    width: 4rem;
-    height: 5px;
-    background-color: #ee2211;
-    position: absolute;
-    left: 47%;
-    top: 5%;
-}
+
 
 .container3 {
     display: flex;
@@ -91,6 +116,7 @@ section {
     align-items: center;
     padding-right: 2rem;
     text-align: end;
+    background-image: url(../images/onda.svg);
 }
 
 .container3 span {
@@ -110,9 +136,20 @@ section {
     padding: 1rem;
     
 }
+.container4 > *:nth-child(odd) {
+    background-color: #f7f7f7;
+    
+ 
+}
+
 .vantagem {
     display: grid;
     grid-template-columns: 40px 300px;
+    padding-left: 1rem;
+
+}
+.vantagem:hover {
+    border-left: 4px solid #ee2211;
 
 }
 .vantagem img {

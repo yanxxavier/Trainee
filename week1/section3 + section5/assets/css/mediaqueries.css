@@ -1,0 +1,173 @@
+@media (max-width: 1100px) {
+    section {   
+        grid-template-columns: repeat(2, 350px);    
+    } 
+    .container1 {
+       padding: 1.5rem;    
+     }
+     .container1::after {
+        top: 3%;
+        left: 45%;
+       
+    }
+    .container1 h1 {
+        font-size: 1.55rem;
+    }
+    .container1 p {
+        font-size: 1rem;
+        line-height: 18px;
+        margin-bottom: 30px;
+    }
+    .container1 a {
+        padding: 1rem 2rem;     
+    }
+    .container3 {
+        padding-right: 1rem;     
+    }
+    .container3 span {
+        font-size: 3rem;
+    }
+    .container4 {
+        gap: 0.5rem;
+        padding: 0.5rem;
+        
+    }
+    .vantagem img {
+        margin-top: 20px;
+    }
+    .vantagem h4 {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .info {
+       text-align:start;
+       font-size: 1rem;
+       
+    }
+}
+@media (max-width: 780px) {
+    .nav-links {
+        list-style-type: none;
+        display: flex;
+        gap: 1rem;
+    }
+    .nav-links li {
+        padding: 1rem 1.5rem;
+        
+        
+    }
+    section { 
+        grid-template-columns: repeat(2, 250px); 
+    } 
+    .container1 {
+        padding: 1.5rem;    
+      }
+      .container1::after {
+         top: 3%;
+         left: 42%;
+        
+     }
+     .container1 h1 {
+        font-size: 1.2rem;
+    }
+    .container1 p {
+        font-size: 1rem;
+        line-height: 18px;
+        margin-bottom: 25px;
+    }
+    .container1 a {
+        padding: 1rem 1.5rem;     
+    }
+    .container3 {
+        padding-right: 1rem;     
+    }
+    .container3 span {
+        font-size: 2rem;
+    }
+    
+    .vantagem {
+        display: grid;
+        grid-template-columns: 40px 200px;
+        padding-left: 1rem;
+        padding: 5px;
+    
+    }
+    .vantagem img {
+        margin-top: 20px;
+
+    }
+    .vantagem h4 {
+        font-size: 1rem;
+        font-weight: bolder;
+    }
+    .info {
+       text-align:start;
+       font-size: 0.9rem;
+       
+    }
+    
+}
+@media (max-width: 580px) {
+    nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-evenly;
+        align-items: center; 
+        
+     }
+    .menu-hamburger {
+        display: flex;
+    }
+    .nav-links {
+        display: none; 
+    }
+    
+    section { 
+        grid-template-columns: repeat(1, 330px); 
+    } 
+    .container1 {
+        padding: 2rem;    
+      }
+      .container1::after {
+         top:6%;
+         left: 11%;
+         
+        
+     }
+     .container1 h1 {
+        font-size: 1.5rem;
+    }
+    .container1 p {
+        font-size: 1.2rem;
+        line-height: 20px;
+        margin-bottom: 30px;
+    }
+    
+    .container3 {
+        display: flex;
+        justify-content: center;
+        padding: 5rem;
+    }
+    
+    .vantagem {
+        display: grid;
+        grid-template-columns: 40px 300px;
+        padding-left: 1rem;
+        padding: 10px;
+    
+    }
+    .vantagem img {
+        margin-top: 31px;
+
+    }
+    .vantagem h4 {
+        font-size: 1.5rem;
+        font-weight: bolder;
+    }
+    .info {
+       text-align:start;
+       font-size: 1rem;
+       
+    }
+    
+}
