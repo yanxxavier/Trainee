@@ -133,7 +133,7 @@ section {
     background-color: white;
     align-items: center;
     gap: 1rem;
-    padding: 1rem;
+    
     
 }
 .container4 > *:nth-child(odd) {
@@ -144,7 +144,7 @@ section {
 
 .vantagem {
     display: grid;
-    grid-template-columns: 40px 300px;
+    grid-template-columns: 40px 50%;
     padding-left: 1rem;
 
 }
