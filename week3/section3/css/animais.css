@@ -149,3 +149,60 @@ body {
     font-size: 1.3rem;
     font-weight: bold;
 }
+.js-tab__content article {
+    display: none;
+}
+
+.js-tab__content article.ativo {
+    display: block !important;
+    animation: show .5s forwards;
+}
+
+@keyframes show {
+    from {
+        opacity: 0;
+        transform: translate3d(-30px, 0, 0);
+    }
+    to {
+        opacity: 1;
+        transform: translate(0, 0, 0);
+    }
+}
+
+.js-accordion__list dd {
+    display: none;
+}
+.js-accordion__list dt::after {
+    content: "⮷";
+    margin-left: 1rem;
+}
+.js-accordion__list dt.ativo::after {
+    content: "⮵";
+}
+.js-accordion__list dd.ativo {
+    display: block;
+    animation: dropDown 0.5s forwards;
+}
+
+
+@keyframes dropDown {
+    from {
+        opacity: 0;
+        max-height: 0;
+    }
+    to {
+        opacity: 1;
+        max-height: 200px;
+    }
+}
+
+.js-scroll {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+    transition: .3s;
+}
+.js-scroll.ativo {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+}
+
