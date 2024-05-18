@@ -1,7 +1,7 @@
 
 
 export default function initScrollAnimation() {
-    const sections = document.querySelectorAll('.js-scroll');
+    const sections = document.querySelectorAll('[data-anime="scroll"]');
     if (sections.length) {
         const windowHalf = window.innerHeight * 0.6;
         function scrollAnimation() {
