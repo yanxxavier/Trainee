@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Esportes+</title>
+</head>
+<body>
+    <header>
+        <nav class="navbar container">
+            <div class="img__box">
+                <img src="images/logo.svg" class="navbar__logo" alt="Logo Esportes+"/>
+            </div>
+            <button class="nav__button" data-nav="btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            
+            <ul class="nav__links " data-nav="links">
+                <li><a href="">Home</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="">Serviços</a></li>
+                <li><a href="#duvidas">Dúvidas</a></li>
+                <li><a href="">Contato</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="home">
+            <div class="slider__container">
+                <div class="slides">
+                    <input type="radio" name="radio-btn" id="radio1" class="radio__slides">
+                    <input type="radio" name="radio-btn" id="radio2" class="radio__slides">
+                    <input type="radio" name="radio-btn" id="radio3" class="radio__slides">
+                    
+                    <div class="slide first">
+                        <img src="./images/nadador-slider.jpeg" alt="Nadador">
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="slide">
+                        <img src="./images/volei-slider.jpeg" alt="Jogo de vôlei">
+                    </div>
+                    <div class="slide">
+                        <img src="./images/futFem-slider.jpeg" alt="Jogo de Futebol feminino">
+                    </div>
+                    <div class="navigation__auto">
+                        <div class="auto-btn1"></div>
+                        <div class="auto-btn2"></div>
+                        <div class="auto-btn3"></div>
+                    </div>
+                </div>
+                <div class="manual__navigation">
+                    <label for="radio1" class="manual-btn"></label>
+                    <label for="radio2" class="manual-btn"></label>
+                    <label for="radio3" class="manual-btn"></label>
+                </div>
+            </div>
+        </section>
+        <section class="sobre" id="sobre">
+            <div class="sobre__sides container">
+                <div class="images3d">
+                    <img src="./images/sobre-img1.jpeg" alt="Mulher treinando" class="sobre__image1">
+                    <img src="./images/sobre-img2.jpeg" alt="Natação" class="sobre__image2">
+                    <img src="./images/sobre-img3.jpeg" alt="Partida de vôlei" class="sobre__image3">
+                </div>
+                <div class="about__text">
+                    <h2 class="sub__title">Sobre</h2>
+                    <p>A Academia Esportes+ é um centro esportivo de ponta localizado no coração da cidade, oferecendo instalações modernas e uma ampla gama de atividades físicas. Com treinadores experientes e programas personalizados, a academia atende tanto atletas profissionais quanto iniciantes. Suas instalações incluem piscinas olímpicas, quadras poliesportivas e salas de musculação de última geração. A Altitude se destaca pela integração de tecnologias avançadas no monitoramento de desempenho e bem-estar dos seus membros, promovendo saúde e excelência esportiva em um ambiente motivador e acolhedor.
+
+
+
+
+
+
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section class="duvidas__frequentes" id="duvidas">
+            <div class="side-a-side container">
+                <h2 class="sub__title">Dúvidas <br>Frequentes</h2> 
+            
+                <dl class="lista__duvidas" data-animation="accordion">
+                    <div class="question">
+                        <dt>Esportes disponíveis e suas modalidades?</dt>
+                        <dd>Oferecemos uma ampla variedade de esportes, incluindo natação, musculação, futebol e vôlei.</dd>
+                    </div>
+                    
+                    <div class="question">
+                        <dt>Agenda de horários para treinos?</dt>
+                        <dd>Nossa agenda varia de acordo com a demanda, mas temos horários matutinos, vespertinos e noturnos para a maioria das modalidades.</dd>
+                    </div>
+                    
+                    <div class="question">
+                        <dt>Processo de matrícula e pagamento?</dt>
+                        <dd>O processo de matrícula é simples e pode ser feito pessoalmente em nossa recepção. Oferecemos diversas opções de pagamento, incluindo mensalidades e planos trimestrais.</dd>
+                    </div>
+                    
+                    <div class="question">
+                        <dt>Qualificação dos instrutores para cada esporte?</dt>
+                        <dd>Nossos instrutores são altamente qualificados e possuem certificações reconhecidas em suas respectivas áreas. Eles estão dedicados a fornecer orientação especializada e motivadora para ajudar você a atingir seus objetivos.</dd>
+                    </div>
+                    
+    
+                </dl>
+            </div>
+                
+        </section>
+    </main>
+    
+
+    <script type="module" src="js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,52 @@
+.menu-btn {
+    display: none;
+}
+@media (max-width:700px) {
+    .menu-btn {
+        display: flex;
+        align-items: center;
+        background-color: #222;
+        border: none;
+        padding: .5rem 1rem;
+        border-radius: 4px;
+        text-transform: uppercase;
+        font-weight: bold;
+        color: white;
+        cursor: pointer;
+        margin: 10px;
+        position: relative;
+        z-index: 300;
+    }
+    .menu-btn::before {
+        content: '';
+        display: inline-block;
+        width: 13px;
+        height: 2px;
+        background-color: white;
+        box-shadow: 0 4px white, 0 -4px white;
+        margin-right: 7px;
+        transition: transform .3s;
+    }
+    .menu-btn.active::before {
+        transform: rotate(90deg);
+    }
+     #menu {
+        display: none;
+        position: absolute;
+        width: 160px;
+        background-color: #fb5;
+        z-index: 200;
+        padding: 60px 0 20px 0;
+        top: 0;
+        
+
+    }
+    #menu.active {
+        animation: show-right .3s forwards;
+        display: block;
+    }
+    .dropdown-menu {
+        position: static;
+        border: none;
+    }
+}

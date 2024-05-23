@@ -1,5 +1,5 @@
 export default function initAccordion() {
-    const accordingList = document.querySelectorAll('[data-anime="accordion"] dt')
+    const accordingList = document.querySelectorAll('[data-anime="accordion"] dt');
     if(accordingList.length) {
         accordingList[0].classList.add('ativo');
         accordingList[0].nextElementSibling.classList.add('ativo')

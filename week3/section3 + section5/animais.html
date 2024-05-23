@@ -4,16 +4,25 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/mediaQueriesAnimais.css">
+    
     <title>Animais Fantásticos</title>
 </head>
 <body>
     <div class="grid-container">
-
-    
         <nav class="menu">
-            <ul>
+            <button class="menu-btn" data-menu="button" aria-expanded="false" aria-controls="menu">Menu</button>
+            <ul data-menu="list" id="menu">
                 <li><a href="#animais">Animais</a></li>
+                <li data-dropdown>
+                    <a href="aaaa.html">Sobre</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="">A empresa</a></li>
+                        <li><a href="">Equipe</a></li>
+                        <li><a href="">Sócios</a></li>
+                        <li><a href="">Investidores</a></li>
+                        
+                    </ul>
+                </li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#contato">Contato</a></li>
                 <li><a href="login.html" data-modal="open">Login ↠</a></li>
@@ -148,7 +157,7 @@
         </section>
         <section class="grid-section contato" data-anime="scroll" id="contato">
             <h1 class="section__title">contato</h1>
-            <div class="map__area">
+            <div class="map__area" data-tooltip aria-label="Mapa da localizaçao do estabelecimento">
                 <img src="img/mapa.png" alt="mapa da localizaçao">
             </div>
             <ul class="dados">
