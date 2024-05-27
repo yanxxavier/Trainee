@@ -4,6 +4,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 20px;
 }
 .sobre__sides {
     height: 100%;
@@ -11,6 +12,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    margin-bottom: 2rem;
    
 }
 .sobre__sides .images3d {
@@ -195,6 +197,7 @@
     }
     .sobre__sides .about__text p {
         font-size: 1rem;
+        max-height: 300px;
     }
     
 }
@@ -225,6 +228,10 @@
     }
     .sobre__sides .about__text .sub__title::after{
        width: 3rem;  
+    }
+    .sobre__sides .about__text p {
+        font-size: .8rem;
+        max-height: 300px;
     }
     
 }
