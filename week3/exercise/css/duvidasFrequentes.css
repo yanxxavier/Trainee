@@ -11,11 +11,11 @@
 
 }
 .side-a-side {  
-    height: 100%;
-    width: 100%;
+    column-gap: 2rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    
 }
 .duvidas__frequentes .sub__title {
     font-size: 3rem;
@@ -97,7 +97,7 @@
 .lista__duvidas dd {
     font-size: 1.3rem;
     line-height: 1.4rem;
-    padding: 1.3rem ;
+    padding: 1rem ;
     color: #06121E;
     display: none;
     animation: showDown .3s forwards;

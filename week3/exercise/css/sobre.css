@@ -11,6 +11,7 @@
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+   
 }
 .sobre__sides .images3d {
     position: relative;
@@ -197,7 +198,7 @@
     }
     
 }
-@media (max-width:530px) {
+@media (max-width:545px) {
     .sobre__sides .images3d .sobre__image1{
         object-fit: cover;
         width: 212px;

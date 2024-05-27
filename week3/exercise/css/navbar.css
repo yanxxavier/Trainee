@@ -2,13 +2,17 @@ html {
     font-family: "Montserrat", sans-serif;
     scroll-behavior: smooth;
 }
+
 body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    
 }
 .container {
     max-width: 1440px;
+   
+    padding: 0 2rem;
 }
 header {
     width: 100%;
@@ -17,12 +21,14 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
+
 }
 .navbar {
   display: flex;
   justify-content: space-between;
   width: inherit;
   align-items: center;
+  
 }
 .nav__button {
     display: none;
@@ -82,9 +88,6 @@ header {
     .nav__links {
         display: none;
     }
-    .container {
-        padding: 0 1rem;
-    }
     
     .nav__button {
         border: none;
@@ -137,10 +140,5 @@ header {
         right: 0;
         text-align: center;
         animation: showDown .5s forwards;
-    }
-}
-@media (max-width:400px) {
-    .navbar {
-        padding: 0 1rem;
     }
 }

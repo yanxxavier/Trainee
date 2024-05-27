@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/style.css">
-    <title>Esportes+</title>
+    
 </head>
 <body>
     <header>
@@ -23,7 +23,7 @@
                 <li><a href="#sobre">Sobre</a></li>
                 <li><a href="">Serviços</a></li>
                 <li><a href="#duvidas">Dúvidas</a></li>
-                <li><a href="">Contato</a></li>
+                <li><a href="#contato">Contato</a></li>
             </ul>
         </nav>
     </header>
@@ -79,7 +79,7 @@
             </div>
         </section>
         <section class="duvidas__frequentes" id="duvidas">
-            <div class="side-a-side container">
+            <div class="side-a-side">
                 <h2 class="sub__title">Dúvidas <br>Frequentes</h2> 
             
                 <dl class="lista__duvidas" data-animation="accordion">
@@ -109,32 +109,81 @@
                 
         </section>
         <section class="contato" id="contato">
-            <h2 class="sub__title">Fale Conosco</h2>
-            <div class="contato-local">
-                <div class="contato__side">
-                    <form name="contato">
-                        <span>
-                            <label for="nome">Nome</label>
-                            <input type="text" placeholder="Seu nome" required>
-                            <label for="telefone">Telefone</label>
-                            <input type="text" placeholder="(84)99999-9999" required>
-                        </span>
-                        <label for="email">Email</label>
-                        <input type="email" required>
-
-                        <label for="textarea">Mensagem</label>
-                        <textarea name="textarea" id="textarea"></textarea>
-                    </form>
-                </div>
-
-                <div class="local__side">
-                    <div class="endereco">
-                        <img src="./images/pin.svg" alt="Pin localização">
+           
+            <div class="contato-local container">
+                <title>Esportes+</title> <h2 class="sub__title">Fale Conosco</h2>
+                <div class="speak__area">
+                    <div class="contato__side">
+                    
+                        <form name="contato">
+    
+                            <div class="span-side">
+                                <span>
+                                <label for="nome">Nome</label>
+                                <input type="text" placeholder="Seu nome" required>
+                            </span>
+                            <span>
+                                <label for="telefone">Telefone</label>
+                                <input type="text" placeholder="(84)99999-9999" required>
+                            </span>
+                            </div>
+                            
+                            <label for="email">Email</label>
+                            <input type="email" placeholder="contato@gmail.com" required>
+    
+                            <label for="textarea">Mensagem</label>
+                            <textarea name="textarea" id="textarea" placeholder="O que você precisa?"></textarea>
+                            <button type="submit">enviar mensagem</button>
+                        </form>
+                    </div>
+    
+                    <div class="local__side">
+                        <div class="endereco">
+                            <img src="./images/pin.svg" alt="Pin localização">
+                            <p>Av. Senador Salgado Filho, 3000, Lagoa Nova,
+                                Natal - RN</p>
+                        </div>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15876.569914848684!2d-35.22829816044925!3d-5.835531200000002!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7b2ffe2d085e121%3A0x29edcc001e615018!2sUFRN!5e0!3m2!1spt-BR!2sbr!4v1716513292611!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="social__media">
+                            <img src="./images/email.svg" alt="email">
+                            <img src="./images/insta.svg" alt="instagram">
+                            <img src="./images/face.svg" alt="facebook">
+                            <img src="./images/youtube.svg" alt="youtube">
+                        </div>
                     </div>
                 </div>
+                
             </div>
         </section>
     </main>
+    <footer>
+        <div class="footer__copy container">
+            <img src="images/logo.svg" class="navbar__logo" alt="Logo Esportes+"/>
+            <div class="endereco">
+                <img src="./images/pin.svg" alt="Pin localização">
+                <p>Av. Senador Salgado Filho, 3000, Lagoa Nova,
+                    Natal - RN</p>
+            </div>
+            <div class="email">
+                <img src="images/email.svg" alt="email contato">
+                <p>contato@esporteplus.com <br>
+                    assistencia@esporteplus.com</p>
+            </div>
+            <div class="telefone-social">
+                <div class="telefone">
+                    <img src="./images/phone.svg" alt="Telefone">
+                    <p>(84) 99999-9999</p>
+                </div>
+                <div class="social__media">
+                    <img src="./images/email.svg" alt="email">
+                    <img src="./images/insta.svg" alt="instagram">
+                    <img src="./images/face.svg" alt="facebook">
+                    <img src="./images/youtube.svg" alt="youtube">
+                </div>
+            </div>
+        </div>
+        
+    </footer>
     
 
     <script type="module" src="js/main.js"></script>
