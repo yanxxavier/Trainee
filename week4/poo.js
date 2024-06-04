@@ -108,3 +108,92 @@ listaPrecos.forEach((preco) => {
 console.log(soma.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'}));
 
 limparPreco(listaPrecos[1]);
+
+/*------------------------------------------------------------------------------------*/
+
+
+const comidas = ['pizza', 'frango', 'carne', 'macarrão'];
+
+const ultimo = comidas.pop()
+console.log(ultimo)
+const primeiro = comidas.shift();
+console.log(primeiro)
+
+comidas.push('arroz')
+console.log(comidas)
+
+comidas.unshift('peixe', 'batata');
+console.log(comidas)
+
+
+
+const estudantes = ['marcio', 'brenda', 'joana', 'kleber', 'julia'];
+
+console.log(estudantes.sort());
+console.log(estudantes.reverse());
+console.log(estudantes.includes('joana'));
+console.log(estudantes.includes('juliana'));
+
+let html = `<section>
+              <div>sobre</div>
+              <div>produtos</div>
+              <div>contratos</div>
+            </section>`
+const ul = html.split('section').join('ul');
+console.log(ul.split('div').join('li'));
+
+
+const carros = ['ford', 'fiat', 'vw', 'honda'];
+
+const newCarros = carros.slice();
+carros.pop();
+console.log(carros)
+
+/*------------------------------------------------------------------------------------*/
+
+
+
+const numbers = [3, 44, 333, 23, 122, 322, 33];
+const higher100 = numbers.filter((number) => {
+  return number > 100
+})
+console.log(higher100)
+
+
+const instrumentos = ['Guitarra', 'Baixo', 'Bateria',
+'Teclado']
+
+const hasBaixo = instrumentos.some((item) => {
+  return item == 'Baixo'
+})
+console.log(hasBaixo)
+
+
+// Retorne o valor total das compras
+const compras = [
+{
+item: 'Banana',
+preco: 'R$ 4,99'},
+{
+item: 'Ovo',
+preco: 'R$ 2,99'
+},
+{
+item: 'Carne',
+preco: 'R$ 25,49'
+},
+{
+item: 'Refrigerante',
+preco: 'R$ 5,35'
+},
+{
+item: 'Quejo',
+preco: 'R$ 10,60'
+}
+]
+
+const valorTotal = compras.reduce((acumulador, item) => {
+  const precoLimpo = +item.preco.replace('R$ ', '').replace(',', '.')
+  return acumulador + precoLimpo
+}, 0)
+console.log(valorTotal)
