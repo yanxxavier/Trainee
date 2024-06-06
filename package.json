@@ -1,0 +1,12 @@
+{
+  "name": "trainee",
+  "version": "1.0.0",
+  "description": "traine EJECT",
+  "main": "(/home/yanxxavier/Documentos/ProjetosGits/Trainee/week4/poo-alura/poo.html)",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "type": "module"
+}
